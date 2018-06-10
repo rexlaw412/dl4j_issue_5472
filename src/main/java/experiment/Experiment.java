@@ -113,10 +113,10 @@ public class Experiment {
 
         ComputationGraph netCrash = getComputationGraphicCrash(2, 2);
         net.fit(iterator.next());
-        System.out.println("Sceond Model finish.(Use EarlyStoppingGraphTrainer)");
+        System.out.println("Sceond Model finish.(Not use EarlyStoppingGraphTrainer)");
 
         earlyStoppingGraphTrainer = getTrainer(netCrash, iterator, iterator, 10);
         earlyStoppingGraphTrainer.fit();
-        System.out.println("Sceond Model finish.(Not use EarlyStoppingGraphTrainer)");
+        System.out.println("Sceond Model finish.(Use EarlyStoppingGraphTrainer)");
     }
 }
